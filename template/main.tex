@@ -1,34 +1,8 @@
 \documentclass[a4paper]{article}
 \input{style/style.tex}
-\geometry{a4paper, left=3.18cm, right=3.18cm, top=2.54cm, bottom=2.54cm}
-
-% page head
-\fancypagestyle{preContent}{
-  \fancyhf{}
-  \renewcommand\headrulewidth{.5pt}
-  \renewcommand\footrulewidth{0pt}
-  \fancyhead[OC]{\textcolor{gray}{this is the example page head}}
-  \fancyfoot[C]{\thepage}
-}
-\pagestyle{preContent}
 
 % include images
 \graphicspath{ {figures/} }
-
-\lstset{
-  frame=lines,
-  rulesepcolor=\color{red!20!green!20!blue!20},
-  numbers=left,
-  numberstyle=\small,
-  breaklines=true,
-  escapebegin=\begin{CJK*},
-  escapeend=\end{CJK*},
-  basicstyle=\ttfamily,
-  keywordstyle=\color{green!40!black},
-  identifierstyle=\color{blue!60!black},
-  stringstyle=\color{red},
-  commentstyle=\color{purple!40!black},
-}
 
 \begin{document}
 \renewcommand{\contentsname}{目\ 录}
@@ -39,9 +13,7 @@
 \renewcommand{\tablename}{表}
 \renewcommand{\today}{\number\year 年 \number\month 月 \number\day 日}
 
-
 \begin{titlepage}
-
 \begin{center}
   \vspace*{36pt}
   \fontsize{48pt}{0}{\textbf{标题}} \\
@@ -52,9 +24,11 @@
 \date{\today}
 \author{wjl}
 \end{titlepage}
-
 \newpage
 
+\tableofcontents
+
+\newpage
 
 \section{第一章}\label{sec1}
 
